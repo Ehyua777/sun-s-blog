@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero{
+    @apply bg-[url('https://th.bing.com/th/id/OIG1.BbotQYbtFQwt0YHiecBE?pid=ImgGn')] md:bg-fixed md:sticky;
+}  

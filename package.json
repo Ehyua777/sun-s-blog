@@ -1,0 +1,16 @@
+{
+  "name": "sun-s-blog",
+  "version": "1.0.0",
+  "description": "Sun's Blog, mon blog sur la litérature et mes oeuvres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auto": "npx tailwindcss -i ./src/input.css -o ./public/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Ehyua Ltd",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -1,0 +1,40 @@
+<header class="bg-white">
+    <div class="container px-4 flex justify-between items-center w-[92%]">
+        <div class="my-5">
+            <a href="index.html" class="uppercase font-bold">
+                <span class="bg-amber-500 text-white p-1 rounded-md">Sun's</span>&nbsp;<span
+                    class="text-amber-500">Blog</span>
+            </a>
+        </div>
+        <nav
+            class="navBar duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:text-gray-500" href="#">Acueil</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Articles</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Oeuvre</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">A propos</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-6">
+            <ion-icon name="menu" onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+    </div>
+    <script>
+        const navLinks = document.querySelector('.navBar')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[9%]');
+        }
+    </script>
+</header>
